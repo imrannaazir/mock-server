@@ -3,7 +3,6 @@ const auth = require('json-server-auth');
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
-// const db = require('./db.json'); // Import the database JSON file
 
 server.use(auth)
 server.db = router.db;
